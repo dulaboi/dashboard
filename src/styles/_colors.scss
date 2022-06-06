@@ -1,0 +1,14 @@
+:root {
+	--b1: #69f;
+	--b2: #9bf;
+	--b3: #cdf;
+	--danger: #e74a3b;
+
+	--background: #fff;
+	--bodyBackground: #ddd;
+	--sideNavShadow: #929292;
+	--text: #666;
+	--placeholderText: #aaa;
+}
+
+$linearColor: linear-gradient(to right, var(--danger), var(--b1));

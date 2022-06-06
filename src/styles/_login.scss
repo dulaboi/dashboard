@@ -1,0 +1,140 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	width: 30em;
+	min-height: 30em;
+	max-height: 45em;
+	border-radius: 1em;
+	box-shadow: 0.25em 0.25em 0.5em var(--sideNavShadow);
+	padding: 1em;
+	background-color: var(--background);
+
+	.errMsg {
+		padding: 0.5em 1em;
+		background-color: var(--danger);
+		color: #eee;
+		border-radius: 2em;
+		font-size: 0.8em;
+	}
+
+	.theme {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background: linear-gradient(to right, var(--danger), var(--b1));
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+
+		i {
+			padding: 0.5em 0.75em;
+		}
+		i:hover {
+			cursor: pointer;
+			background-clip: border-box;
+			background-color: var(--bodyBackground);
+			color: var(--text);
+			border-radius: 50%;
+		}
+	}
+
+	.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		font-size: 1.8em;
+		background: $linearColor;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		padding: 0.7em 0;
+		opacity: 85%;
+		user-select: none;
+		h3 {
+			font-weight: 400;
+		}
+		i {
+			font-size: 2.5em;
+		}
+		&:hover {
+			font-size: 2em;
+		}
+	}
+
+	.body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		width: 20em;
+		input {
+			background-color: var(--background);
+			border: none;
+			width: 100%;
+			border-bottom: 0.15em var(--b3) solid;
+			padding: 1em;
+			opacity: 75%;
+			color: var(--text);
+			&::placeholder {
+				color: var(--placeholderText);
+			}
+			&:focus {
+				&::placeholder {
+					color: white;
+				}
+				background: $linearColor;
+				border-radius: 2em;
+				border: none;
+				color: white;
+			}
+			&:hover {
+				border-bottom-color: var(--b2);
+			}
+		}
+		i {
+			font-size: 1.6em;
+			color: var(--danger);
+		}
+		i:hover {
+			font-size: 1.7em;
+			cursor: pointer;
+		}
+
+		button {
+			width: 100%;
+			border: none;
+			font-size: 1.1em;
+			color: white;
+			background: $linearColor;
+			opacity: 75%;
+			border-radius: 0.3em;
+			user-select: none;
+			&:hover {
+				opacity: 100%;
+				cursor: pointer;
+				border-radius: 1em;
+			}
+		}
+	}
+
+	span {
+		font-size: 0.8em;
+		background: $linearColor;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		user-select: none;
+		opacity: 65%;
+		&:hover {
+			opacity: 95%;
+			cursor: pointer;
+		}
+	}
+}
