@@ -1,7 +1,8 @@
 import axios from "axios";
+import { baseURL } from "../config.json";
 
 const instance = axios.create({
-	baseURL: "https://f19b-176-44-59-43.eu.ngrok.io",
+	baseURL,
 	headers: { "Content-Type": "application/json" },
 });
 
